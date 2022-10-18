@@ -1,0 +1,21 @@
+<template>
+     <div><strong>1. </strong>What is your name?</div>
+     <div>
+          <slot name="name"></slot>
+     </div>
+     <div><strong>2. </strong>What is your age?</div>
+     <div>
+          <slot name="age"></slot>
+     </div>
+     <div><strong>3. </strong>Where are you from?</div>
+     <div>
+          <slot name="address"></slot>
+     </div>
+     <div><strong>4. </strong>Have you passed your class 12 examinations?</div>
+     <div>
+          <slot name="exam"></slot>
+     </div>
+     <footer class="slds-card__footer slds-hide">
+          <slot name="footer" onslotchange={changeHandler}></slot>
+     </footer>
+</template>

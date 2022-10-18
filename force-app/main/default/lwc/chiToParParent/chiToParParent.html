@@ -1,0 +1,14 @@
+<template>
+     <lightning-card title="Child to Parent Communication
+                         using Simple Events">
+          <div class="slds-var-m-around_large" onclose={okHandler}>
+               <lightning-button variant="success" label="Show Modal" onclick={showHandler}></lightning-button>
+               <div class="slds-var-m-vertical_medium slds-text-heading_medium">
+                    {message}
+               </div>
+               <template if:true={showModal}>
+                    <c-chi-to-par-s-imple-event></c-chi-to-par-s-imple-event>
+               </template>
+          </div>
+     </lightning-card>
+</template>

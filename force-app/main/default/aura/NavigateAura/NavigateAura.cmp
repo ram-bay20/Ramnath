@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes, lightning:isUrlAddressable" access="global">
+     <aura:attribute name="id" type="String" />
+     <aura:handler name="init" value="{!this}" action="{!c.getId}" />
+
+     <lightning:card title="Aura Component">
+          <div class="slds-var-m-around_large">
+               <p>{!v.id} is the record id fetched from LWC component after navigation</p>
+          </div>
+     </lightning:card>
+</aura:component>

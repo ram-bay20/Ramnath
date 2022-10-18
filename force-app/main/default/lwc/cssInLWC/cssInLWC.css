@@ -1,0 +1,17 @@
+h1 {
+     font-size: 30px;
+     text-align: center;
+     font-weight: bold;
+     color: darkred;
+     border: var(--lwc-borderWidthThin) solid greenyellow;
+     transition: all 0.3s ease-in;
+}
+
+.style {
+     font-style: italic;
+     color: darkgreen;
+}
+
+h1:hover {
+     background: greenyellow;
+}

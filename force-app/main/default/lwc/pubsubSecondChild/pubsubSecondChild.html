@@ -1,0 +1,19 @@
+<template>
+     <div style="border: 5px solid #ff0; margin: 2rem;">
+          <p style="margin: 1rem;"><strong>Second Child</strong></p>
+          <template for:each={accordianList} for:item="list">
+               <div key={list.id} class="slds-var-m-bottom_large">
+                    <lightning-button variant={list.variant} label={list.name} class="slds-var-m-horizontal_small">
+                    </lightning-button>
+                    <template if:true={list.selected}>
+                         <div style="background-color: #f1f1f1; padding: 1rem;">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores delectus quidem
+                              repellendus voluptates nostrum nesciunt, expedita dolores nisi placeat at, reiciendis
+                              obcaecati blanditiis minima amet facere nam quo libero molestias officia explicabo. Iure
+                              vel consequuntur, illo accusamus necessitatibus maiores optio.
+                         </div>
+                    </template>
+               </div>
+          </template>
+     </div>
+</template>

@@ -1,0 +1,13 @@
+<template>
+     <lightning-card title="Query Selectors">
+          <div class="slds-var-m-around_large">
+               <h1>I am Ramnath Mandal from Prasauni-4,Bara.</h1>
+               <template for:each={cricketers} for:item="cric">
+                    <div class="name" key={cric}>{cric}</div>
+               </template>
+               <lightning-button variant="success" label="Click Here" class="slds-var-m-around_medium"
+                    onclick={getData}></lightning-button>
+               <div class="write" lwc:dom="manual"></div>
+          </div>
+     </lightning-card>
+</template>

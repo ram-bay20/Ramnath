@@ -1,0 +1,18 @@
+<template>
+     <lightning-card title="Parent Life Cycle Hook">
+          <div class="slds-var-m-around_large">
+
+               <template if:true={isVisible}>
+                    <lightning-button variant="destructive" label="Hide" title="Hide" onclick={clickHandler}>
+                    </lightning-button>
+                    <c-child-life-cycle-hook></c-child-life-cycle-hook>
+               </template>
+
+               <template if:false={isVisible}>
+                    <lightning-button variant="success" label="Show" title="Show" onclick={clickHandler}>
+                    </lightning-button>
+               </template>
+
+          </div>
+     </lightning-card>
+</template>

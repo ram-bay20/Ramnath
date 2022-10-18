@@ -1,0 +1,13 @@
+<template>
+     <lightning-card title="CSS Composition">
+          <div class="slds-var-m-around_large">
+               <h2>This is Parent CSS Component</h2>
+               <c-css-child>
+                    <p>This is host within slot without class</p>
+               </c-css-child>
+               <c-css-child class="cls">
+                    <p>This is host within slot with class</p>
+               </c-css-child>
+          </div>
+     </lightning-card>
+</template>

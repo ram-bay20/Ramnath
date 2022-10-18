@@ -1,0 +1,10 @@
+.wrapper {
+     width: 100%;
+     background-color: #def;
+}
+
+.share {
+     text-align: right;
+     color: #fff;
+     padding: 10px 0;
+}

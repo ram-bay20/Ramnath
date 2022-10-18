@@ -1,0 +1,21 @@
+<template>
+     <lightning-card title="Signup Form">
+          <div class="slds-var-m-around_large">
+               <h2 class="slds-text-heading_medium slds-text-align_center slds-var-m-bottom_large"><strong>Signin
+                         Form</strong></h2>
+               <lightning-input type="text" label="First-name"></lightning-input>
+               <lightning-input type="text" label="Last-name"></lightning-input>
+               <lightning-input type="date" label="Date-of-Birth"></lightning-input>
+               <lightning-input type="email" label="Email-address"></lightning-input>
+               <lightning-input type="password" label="Password"></lightning-input>
+               <div class="slds-var-m-vertical_large slds-align_absolute-center">
+                    <lightning-button variant="destructive" label="Back" title="Back" onclick={clickHandler}
+                         class="slds-var-m-horizontal_large"></lightning-button>
+                    <lightning-button variant="success" label="Submit" title="Register" onclick={submitHandler}
+                         class="slds-var-m-horizontal_large"></lightning-button>
+               </div>
+               <h2 class="slds-text-heading_medium slds-text-align_center slds-var-m-bottom_large">
+                    <strong>{submitted}</strong></h2>
+          </div>
+     </lightning-card>
+</template>

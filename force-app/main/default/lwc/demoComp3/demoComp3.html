@@ -1,0 +1,30 @@
+<template>
+     <lightning-card title="For-each">
+          <div class="slds-var-m-around_medium">
+               <template for:each={friendList} for:item="friend">
+                    <ul key={friend} class="slds-has-dividers_around-space">
+                         <li class="slds-item">{friend}</li>
+                    </ul>
+               </template>
+          </div>
+     </lightning-card>
+
+     <lightning-card title="Iterator">
+          <div class="slds-var-m-around_medium">
+               <template iterator:owner={compCEO}>
+                    <div key={owner.value.id}>
+                         <ul class="slds-has-dividers_around-space">
+                              <template if:true={owner.first}>
+                                   <div class="slds-box slds-theme_shade" align="center">
+                                        <strong>List of CEO of some famous companies</strong>
+                                   </div>
+                              </template>
+                              <li class="slds-item">
+                                   <strong>{owner.value.compName}</strong><span>: {owner.value.ceo}</span>
+                              </li>
+                         </ul>
+                    </div>
+               </template>
+          </div>
+     </lightning-card>
+</template>

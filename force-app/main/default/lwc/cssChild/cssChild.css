@@ -1,0 +1,15 @@
+:host {
+     color: orangered;
+     font-size: 25px;
+     background: green;
+}
+
+:host(.cls) {
+     color: white;
+     font-size: 25px;
+     background-color: red;
+}
+
+/* p{
+     color: yellow;
+} */

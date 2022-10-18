@@ -1,0 +1,14 @@
+h2 {
+     color: red;
+     font-size: 25px;
+}
+
+/* c-css-child{
+     color: #ff9100;
+          font-size: 25px;
+} */
+
+p {
+     color: yellow;
+     background: blue;
+}

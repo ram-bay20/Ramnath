@@ -1,0 +1,23 @@
+<template>
+     <!-- This is an example for parent to child communicatin using primitive datatypes -->
+     <c-par-to-chi-primitive-child name="Ramnath Mandal" age=20 title="Parent to child primitive communication"
+          is-valid=false>
+     </c-par-to-chi-primitive-child>
+
+     <!-- This is an example for parent to child communicatin using non primitive datatypes -->
+     <div class="slds-var-m-bottom_medium"></div>
+     <c-par-to-chi-non-primitive-child slides={imgSlide}></c-par-to-chi-non-primitive-child>
+
+     <!-- This is an example for parent to child communication on action at parent component -->
+     <div class="slds-var-m-bottom_medium"></div>
+     <lightning-card title="Communication on action at parent">
+          <div class="slds-var-m-around_large">
+               <lightning-input type="number" label="Enter the percentage of progress" value={inputValue}
+                    onkeyup={changeHandler}></lightning-input>
+               <c-par-to-chi-action-child progress={inputValue}></c-par-to-chi-action-child>
+          </div>
+     </lightning-card>
+
+     <c-par-to-chil-method></c-par-to-chil-method>
+     <lightning-button variant="destructive" label="Reset" onclick={handleClick}></lightning-button>
+</template>

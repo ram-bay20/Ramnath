@@ -1,0 +1,37 @@
+<template>
+     <lightning-card title="Record Form">
+          <div class="slds-var-m-around_medium">
+               <lightning-record-form object-api-name={objName} fields={fieldNames} onsuccess={handleSuccess}>
+               </lightning-record-form>
+          </div>
+     </lightning-card>
+
+     <lightning-card title="Record Form">
+          <div class="slds-var-m-around_medium">
+               <lightning-record-form record-id="001N0000027fKVEIA2" object-api-name={objName} fields={fieldNames} >
+               </lightning-record-form>
+          </div>
+     </lightning-card>
+
+     <lightning-card title="Record Form">
+          <div class="slds-var-m-around_medium">
+               <lightning-record-form record-id="001N0000027fKVEIA2" object-api-name={objName} fields={fieldNames} mode="readonly">
+               </lightning-record-form>
+          </div>
+     </lightning-card>
+
+     <lightning-card title="Record Form">
+          <div class="slds-var-m-around_medium">
+               <lightning-record-form record-id="001N0000027fKVEIA2" object-api-name={objName} fields={fieldNames} columns="2" mode="edit">
+               </lightning-record-form>
+          </div>
+     </lightning-card>
+
+     <lightning-card title="Record Form">
+          <div class="slds-var-m-around_medium">
+               <lightning-record-form record-id="001N0000027fKVEIA2" object-api-name={objName} columns="2" mode="edit" layout-type="Compact">
+               </lightning-record-form>
+          </div>
+     </lightning-card>
+
+</template>

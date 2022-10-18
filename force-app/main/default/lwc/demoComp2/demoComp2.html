@@ -1,0 +1,19 @@
+<template>
+     <lightning-card title="Getter">
+          <div class="slds-var-m-around_medium">
+               <div class="slds-var-m-vertical_medium">{firstUser} is the first user to assign with us.</div>
+               <div>The sum of {num1} and {num2} is {sum}</div>
+          </div>
+     </lightning-card>
+
+     <lightning-card title="Conditionals">
+          <div class="slds-var-m-around_medium">
+               <lightning-button slot="actions" variant="badge" label={actionButtonLabel} onclick={toggleDetails}>
+               </lightning-button>
+               <template if:true={showDetails}>
+                    <div class="slds-var-m-top_medium">{details}</div>
+                    <br />
+               </template>
+          </div>
+     </lightning-card>
+</template>

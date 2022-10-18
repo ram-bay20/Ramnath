@@ -1,0 +1,15 @@
+<template>
+     <lightning-card title="Lightning Record Edit Form">
+          <lightning-record-edit-form object-api-name={objName} record-id="003N000001vZtEyIAK">
+               <lightning-input-field field-name={fields.accountField}></lightning-input-field>
+               <lightning-input-field field-name={fields.nameField}></lightning-input-field>
+               <lightning-input-field field-name={fields.titleField}></lightning-input-field>
+               <lightning-input-field field-name={fields.phoneField}></lightning-input-field>
+               <lightning-input-field field-name={fields.emailField}></lightning-input-field>
+               <lightning-button variant="brand" class="slds-var-m-around_xx-small" label="Cancel" onclick={cancelHandler}>
+               </lightning-button>
+               <lightning-button variant="success" type="submit" class="slds-var-m-around_xx-small" label="Save">
+               </lightning-button>
+          </lightning-record-edit-form>
+     </lightning-card>
+</template>

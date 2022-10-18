@@ -1,0 +1,19 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+     <aura:attribute name="messages" type="String" />
+     <aura:attribute name="receivedMsg" type="String" />
+
+     <lightning:messageChannel type="DemoLMS__c" aura:id="DemoLMS" onMessage="{!c.msgHandler}" scope="APPLICATION" />
+
+     <lightning:card title="LWC to Aura Communication using LMS">
+          <div class="slds-var-p-around_medium">
+               <lightning:input type="text" label="Enter the message to be published" value="{!v.messages}"
+                    onkeyup="{!c.handleKey}" />
+          </div>
+          <div class="slds-var-p-around_medium">
+               <lightning:button variant="brand" label="Publish" onclick="{!c.handleClick}" />
+          </div>
+          <div class="slds-var-p-around_medium">
+               <h1><strong>Message Received :- <i>{!v.receivedMsg}</i></strong></h1>
+          </div>
+     </lightning:card>
+</aura:component>

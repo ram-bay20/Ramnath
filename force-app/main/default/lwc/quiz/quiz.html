@@ -1,0 +1,42 @@
+<template>
+     <lightning-card title="General Knowlwdge Quiz (G.K Quiz)">
+          <div class="slds-var-m-around_large">
+               <form>
+                    <template for:each={quizQuestions} for:item="questions">
+                         <div key={questions.id} class="slds-var-m-around_large">
+                              <div class="slds-var-m-bottom_xx-small"><strong>{questions.id} -
+                                        {questions.question}</strong></div>
+                              <div class="slds-grid slds-grid_vertical slds-var-p-left_large">
+                                   <div class="slds-col">
+                                        <input type="radio" name={questions.id} value="a" onchange={changed} /><span>
+                                             {questions.answers.a}</span>
+                                   </div>
+                                   <div class="slds-col">
+                                        <input type="radio" name={questions.id} value="b" onchange={changed} /><span>
+                                             {questions.answers.b}</span>
+                                   </div>
+                                   <div class="slds-col">
+                                        <input type="radio" name={questions.id} value="c" onchange={changed} /><span>
+                                             {questions.answers.c}</span>
+                                   </div>
+                                   <div class="slds-col">
+                                        <input type="radio" name={questions.id} value="d" onchange={changed} /><span>
+                                             {questions.answers.d}</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </template>
+                    <lightning-button variant="brand" type="submit" title="submit" label="Submit" onclick={submitQuiz}
+                         class="slds-var-m-around_medium" disabled={allNotSelected}>
+                    </lightning-button>
+                    <lightning-button variant="brand" type="reset" title="reset" label="Reset" onclick={resetQuiz}
+                         class="slds-var-m-around_medium"></lightning-button>
+               </form>
+               <template if:true={isSubmitted}>
+                    <div class={allRight}><strong>You scored {rightAnswers} out of {quizQuestions.length}
+                              questions.</strong>
+                    </div>
+               </template>
+          </div>
+     </lightning-card>
+</template>

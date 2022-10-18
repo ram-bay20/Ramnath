@@ -1,0 +1,19 @@
+<template>
+     <lightning-card title="Signin Form">
+          <div class="slds-var-m-around_large">
+               <h2 class="slds-text-heading_medium slds-text-align_center slds-var-m-bottom_large"><strong>Signin
+                         Form</strong></h2>
+               <lightning-input type="email" label="Email-address"></lightning-input>
+               <lightning-input type="password" label="Password"></lightning-input>
+               <div class="slds-var-m-vertical_large slds-align_absolute-center">
+                    <lightning-button variant="destructive" label="Back" title="Back" onclick={clickHandler}
+                         class="slds-var-m-horizontal_large"></lightning-button>
+                    <lightning-button variant="brand" label="Submit" title="Login" onclick={submitHandler}
+                         class="slds-var-m-horizontal_large"></lightning-button>
+               </div>
+               <h2 class="slds-text-heading_medium slds-text-align_center slds-var-m-bottom_large">
+                    <strong>{submitted}</strong>
+               </h2>
+          </div>
+     </lightning-card>
+</template>

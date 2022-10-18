@@ -1,0 +1,188 @@
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.scorecard {
+     margin: 10px 0;
+     text-align: left;
+}
+
+.timer {
+     display: inline-block;
+     margin: 0 10px;
+}
+
+.replay {
+     cursor: pointer;
+     margin: 0 10px;
+}
+
+.grid-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 10px;
+     grid-template-rows: repeat(4, 1fr);
+     background: #09f;
+     padding: 1.2rem;
+     border-radius: 5px;
+     box-shadow: 5px 0px 5px 2px #ffe600;
+}
+
+.grid-container:hover {
+     box-shadow: 10px 11px 8px 2px #ff0;
+}
+
+.grid-container .card {
+     width: 5rem;
+     height: 5rem;
+     margin: 2px;
+     background: #000d;
+     color: orangered;
+     font-size: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 15%;
+     cursor: pointer;
+     box-shadow: 0px 0px 5px 5px cyan;
+}
+
+.grid-container .card:hover {
+     box-shadow: 5px 6px 5px 0px #943c1a;
+     background: #000a;
+}
+
+.grid-container .card.open {
+     transform: rotateY(0);
+     background: cyan;
+     animation-name: flipInY;
+     animation-duration: 1s;
+     backface-visibility: visible !important;
+     -webkit-backface-visibility: visible !important;
+     cursor: default;
+}
+
+.grid-container .card.show {
+     font-size: 2.5rem;
+     visibility: visible !important;
+     opacity: 100 !important;
+
+}
+
+.grid-container .card.disabled {
+     pointer-events: none;
+}
+
+.grid-container .card.show.open {
+     box-shadow: 5px 6px 5px 0px #943c1a;
+}
+
+.grid-container .card.match {
+     background: gold;
+     color: green;
+     cursor: default;
+     font-size: 2.5rem;
+     animation-name: rubber;
+     animation-duration: 0.6s;
+     backface-visibility: visible !important;
+     -webkit-backface-visibility: visible !important;
+}
+
+.grid-container .card.unmatch {
+     background: orangered;
+     color: cyan;
+     animation-name: blip;
+     animation-duration: 0.5s;
+     backface-visibility: visible !important;
+     -webkit-backface-visibility: visible !important;
+}
+
+.starrate {
+     color: gold;
+     font-size: 1.6rem;
+     margin: 0 3px 5px 3px;
+}
+
+@keyframes flipInY {
+     from {
+          transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+          animation-timing-function: ease-in;
+          opacity: 0;
+     }
+
+     40% {
+          transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+          animation-timing-function: ease-in;
+     }
+
+     60% {
+          transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+          opacity: 1;
+     }
+
+     80% {
+          transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+     }
+
+     to {
+          transform: perspective(400px);
+     }
+}
+
+@keyframes rubber {
+     from {
+          transform: scale3d(1, 1, 1);
+     }
+
+     20% {
+          transform: scale3d(1.05, 0.95, 1);
+     }
+
+     35% {
+          transform: scale3d(0.95, 1.05, 1);
+     }
+
+     50% {
+          transform: scale3d(1.15, 1.15, 1);
+     }
+
+     65% {
+          transform: scale3d(0.9, 1.1, 1);
+     }
+
+     85% {
+          transform: scale3d(1.1, 0.9, 1);
+     }
+
+     to {
+          transform: scale3d(1, 1, 1);
+     }
+}
+
+@keyframes blip {
+     from {
+          transform: translate3d(0, 0, 0);
+     }
+
+     20% {
+          transform: translate3d(4px, 0, 0);
+     }
+
+     40% {
+          transform: translate3d(-4px, 0, 0);
+     }
+
+     60% {
+          transform: translate3d(4px, 0, 0);
+     }
+
+     80% {
+          transform: translate3d(-4px, 0, 0);
+     }
+
+     to {
+          transform: translate3d(0, 0, 0);
+     }
+}

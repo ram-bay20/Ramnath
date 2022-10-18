@@ -1,0 +1,72 @@
+<template>
+     <div class="container">
+          <lightning-card title="Game Project">
+               <div class="slds-var-m-around_large">
+                    <section class="scorecard">
+                         <span class="moves">{moves}</span> Moves
+                         <div class="timer">{takenTime}</div>
+                         <div class="slds-float_right replay">
+                              <i class="fa fa-repeat" onclick={showModal}></i>
+                         </div>
+                    </section>
+                    <section class="main-area">
+                         <ul class="deck card-deck grid-container">
+                              <template for:each={cards} for:item="box">
+                                   <li class={box.classes} type={box.type} key={box.id} onclick={handleTap}>
+                                        <i class={box.icon}></i>
+                                   </li>
+                              </template>
+                         </ul>
+                         <template if:true={succesfull}>
+                              <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+                                   class="slds-modal slds-fade-in-open">
+                                   <div class="slds-modal__container">
+                                        <div class="slds-modal__header">
+                                             <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">
+                                                  Congratulations you're a winner 🎉🎉
+                                             </h1>
+                                        </div>
+                                        <div class="slds-modal__content slds-var-p-around_medium"
+                                             id="modal-content-id-1">
+                                             <p class="slds-text-align_center">
+                                                  <template for:each={gameRating} for:item="rating">
+                                                       <i class="fa fa-star starrate" aria-hidden="true"
+                                                            key={rating}></i>
+                                                  </template>
+                                             </p>
+                                             <p class="slds-text-align_center">
+                                                  You made <strong>{moves}</strong> moves in <i>{takenTime}</i>
+                                             </p>
+                                        </div>
+                                        <div class="slds-modal__footer">
+                                             <lightning-button variant="brand" label="Play Again" onclick={suffle}>
+                                             </lightning-button>
+                                        </div>
+                                   </div>
+                              </section>
+                              <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+                         </template>
+
+                         <template if:true={resetter}>
+                              <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01"
+                                   class="slds-modal slds-fade-in-open slds-modal_small">
+                                   <div class="slds-modal__container">
+                                        <div class="slds-modal__header">
+                                             <h1 id="modal-heading-02" class="slds-modal__title slds-hyphenate">Do you
+                                                  really want to reset? I completed the memory game project</h1>
+                                        </div>
+                                        <div class="slds-modal__footer slds-modal__footer_directional">
+                                             <button class="slds-button slds-button_destructive"
+                                                  onclick={play}>Back</button>
+                                             <button class="slds-button slds-button_success"
+                                                  onclick={suffle}>Reset</button>
+                                        </div>
+                                   </div>
+                              </section>
+                              <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+                         </template>
+                    </section>
+               </div>
+          </lightning-card>
+     </div>
+</template>

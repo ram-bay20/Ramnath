@@ -1,0 +1,41 @@
+<template>
+
+     <lightning-card title="Hello">
+          <lightning-button label="New" slot="actions"></lightning-button>
+          <p class="slds-var-p-horizontal_small">Card Body (custom component)</p>
+          <p slot="footer">Card Footer</p>
+     </lightning-card>
+
+     <div class="slds-var-m-vertical_medium">
+          <c-lightning-card>
+               <h1 slot="title">Card Header</h1>
+               <lightning-button label="New" slot="action"></lightning-button>
+               <p>This is the body of the custom lightning Card</p>
+               <h3 slot="footer">Card Footer</h3>
+          </c-lightning-card>
+     </div>
+
+     <div class="slds-var-m-vertical_medium">
+          <c-lightning-card>
+               <h1 slot="title">Card Header</h1>
+               <p>This is the body of the custom lightning Card without button</p>
+               <h3 slot="footer">Card Footer</h3>
+          </c-lightning-card>
+     </div>
+
+     <div class="slds-var-m-vertical_medium">
+          <c-lightning-card>
+               <p>This is the body of the custom lightning Card without header</p>
+               <h3 slot="footer">Card Footer</h3>
+          </c-lightning-card>
+     </div>
+
+     <div class="slds-var-m-vertical_medium">
+          <c-lightning-card>
+               <h1 slot="title">Card Header</h1>
+               <lightning-button label="New" slot="action"></lightning-button>
+               <p>This is the body of the custom lightning Card without footer</p>
+          </c-lightning-card>
+     </div>
+
+</template>
