@@ -1,9 +1,17 @@
 <template>
-    <lightning-card title="Fetch user Detail using @Wire API">
+    <lightning-card title="Fetch user Detail using @Wire API as a function">
         <div class="slds-var-m-around_small">
             <template if:true={detail}>
                 <div>Name of user: <strong>{detail.Name.value}</strong></div>
                 <div>Email of user: <strong>{detail.Email.value}</strong></div>
+            </template>
+        </div>
+    </lightning-card>
+    <lightning-card title="Fetch user Detail using @Wire API as a property">
+        <div class="slds-var-m-around_small">
+            <template if:true={userDetailProperty.data}>
+                <div>Name of user: <strong>{userDetailProperty.data.fields.Name.value}</strong></div>
+                <div>Email of user: <strong>{userDetailProperty.data.fields.Email.value}</strong></div>
             </template>
         </div>
     </lightning-card>

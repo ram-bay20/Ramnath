@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 2886,
+  "serverMaxRevisionCounter": 3051,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2228,26 +2228,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__wireUserDetails": {
-      "serverRevisionCounter": 2883,
-      "lastRetrievedFromServer": 2883,
+      "serverRevisionCounter": 2911,
+      "lastRetrievedFromServer": 2911,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireUserDetails/wireUserDetails.js-meta.xml": {
-      "serverRevisionCounter": 2884,
-      "lastRetrievedFromServer": 2884,
+      "serverRevisionCounter": 2912,
+      "lastRetrievedFromServer": 2912,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireUserDetails/wireUserDetails.js": {
-      "serverRevisionCounter": 2885,
-      "lastRetrievedFromServer": 2885,
+      "serverRevisionCounter": 2913,
+      "lastRetrievedFromServer": 2913,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireUserDetails/wireUserDetails.html": {
-      "serverRevisionCounter": 2886,
-      "lastRetrievedFromServer": 2886,
+      "serverRevisionCounter": 2914,
+      "lastRetrievedFromServer": 2914,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
@@ -2261,6 +2261,54 @@
       "serverRevisionCounter": 2858,
       "lastRetrievedFromServer": null,
       "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__wireObjectInfo": {
+      "serverRevisionCounter": 2990,
+      "lastRetrievedFromServer": 2990,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireObjectInfo/wireObjectInfo.js-meta.xml": {
+      "serverRevisionCounter": 2991,
+      "lastRetrievedFromServer": 2991,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireObjectInfo/wireObjectInfo.html": {
+      "serverRevisionCounter": 2992,
+      "lastRetrievedFromServer": 2992,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireObjectInfo/wireObjectInfo.js": {
+      "serverRevisionCounter": 2993,
+      "lastRetrievedFromServer": 2993,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__wirePickList": {
+      "serverRevisionCounter": 3048,
+      "lastRetrievedFromServer": 3048,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wirePickList/wirePickList.js": {
+      "serverRevisionCounter": 3049,
+      "lastRetrievedFromServer": 3049,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wirePickList/wirePickList.html": {
+      "serverRevisionCounter": 3050,
+      "lastRetrievedFromServer": 3050,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wirePickList/wirePickList.js-meta.xml": {
+      "serverRevisionCounter": 3051,
+      "lastRetrievedFromServer": 3051,
+      "memberType": "LightningComponentResource",
       "isNameObsolete": false
     }
   }
