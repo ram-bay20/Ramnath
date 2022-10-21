@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 3373,
+  "serverMaxRevisionCounter": 3602,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2336,26 +2336,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__wireGetRecord": {
-      "serverRevisionCounter": 3223,
-      "lastRetrievedFromServer": 3223,
+      "serverRevisionCounter": 3553,
+      "lastRetrievedFromServer": 3553,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireGetRecord/wireGetRecord.html": {
-      "serverRevisionCounter": 3224,
-      "lastRetrievedFromServer": 3224,
+      "serverRevisionCounter": 3554,
+      "lastRetrievedFromServer": 3554,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireGetRecord/wireGetRecord.js-meta.xml": {
-      "serverRevisionCounter": 3225,
-      "lastRetrievedFromServer": 3225,
+      "serverRevisionCounter": 3555,
+      "lastRetrievedFromServer": 3555,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireGetRecord/wireGetRecord.js": {
-      "serverRevisionCounter": 3226,
-      "lastRetrievedFromServer": 3226,
+      "serverRevisionCounter": 3556,
+      "lastRetrievedFromServer": 3556,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
@@ -2384,27 +2384,87 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__wireGetNavItems": {
-      "serverRevisionCounter": 3370,
-      "lastRetrievedFromServer": 3370,
+      "serverRevisionCounter": 3374,
+      "lastRetrievedFromServer": 3374,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireGetNavItems/wireGetNavItems.js": {
-      "serverRevisionCounter": 3371,
-      "lastRetrievedFromServer": 3371,
+      "serverRevisionCounter": 3375,
+      "lastRetrievedFromServer": 3375,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireGetNavItems/wireGetNavItems.js-meta.xml": {
-      "serverRevisionCounter": 3372,
-      "lastRetrievedFromServer": 3372,
+      "serverRevisionCounter": 3376,
+      "lastRetrievedFromServer": 3376,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wireGetNavItems/wireGetNavItems.html": {
-      "serverRevisionCounter": 3373,
-      "lastRetrievedFromServer": 3373,
+      "serverRevisionCounter": 3377,
+      "lastRetrievedFromServer": 3377,
       "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__wireGetRecordUi": {
+      "serverRevisionCounter": 3565,
+      "lastRetrievedFromServer": 3565,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetRecordUi/wireGetRecordUi.js": {
+      "serverRevisionCounter": 3568,
+      "lastRetrievedFromServer": 3568,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetRecordUi/wireGetRecordUi.js-meta.xml": {
+      "serverRevisionCounter": 3566,
+      "lastRetrievedFromServer": 3566,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetRecordUi/wireGetRecordUi.html": {
+      "serverRevisionCounter": 3567,
+      "lastRetrievedFromServer": 3567,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__createRecordAdapter": {
+      "serverRevisionCounter": 3599,
+      "lastRetrievedFromServer": 3599,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__createRecordAdapter/createRecordAdapter.html": {
+      "serverRevisionCounter": 3600,
+      "lastRetrievedFromServer": 3600,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__createRecordAdapter/createRecordAdapter.js-meta.xml": {
+      "serverRevisionCounter": 3601,
+      "lastRetrievedFromServer": 3601,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__createRecordAdapter/createRecordAdapter.js": {
+      "serverRevisionCounter": 3602,
+      "lastRetrievedFromServer": 3602,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "CustomTab__Records": {
+      "serverRevisionCounter": 3579,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "FlexiPage__Records": {
+      "serverRevisionCounter": 3590,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
       "isNameObsolete": false
     }
   }

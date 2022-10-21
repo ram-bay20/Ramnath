@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Get Record UI @wire Adapter">
+        <div class="slds-var-p-around_medium">
+            <template for:each={fieldProp} for:item="field">
+                <div key={field.label}>
+                    <p>
+                        <strong>{field.label} :- </strong><i>{field.values}</i>
+                    </p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Create Record using uiRecord Module">
+        <div class="slds-var-p-around_small">
+            <form class="create">
+                <lightning-input label="First Name" name="FirstName" class="slds-var-m-vertical_x-small" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Last Name" name="LastName" class="slds-var-m-vertical_x-small" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Title" name="Title" class="slds-var-m-vertical_x-small" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Phone" type="phone" name="Phone" class="slds-var-m-vertical_x-small" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Email" type="email" name="Email" class="slds-var-m-vertical_x-small" onchange={changeHandler}></lightning-input>
+                <lightning-button variant="brand" label="Create Contact" onclick={createHandler}></lightning-button>
+            </form>
+        </div>
+    </lightning-card>
+</template>
