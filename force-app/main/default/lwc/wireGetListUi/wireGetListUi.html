@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Get List UI @wire Adapter">
+        <div class="slds-var-p-around_small">
+            <table class="slds-table slds-table_bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Title</th>
+                        <th>Owner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={contacts} for:item="contact">
+                        <tr key={contact.fields.Id.value}>
+                            <td>{contact.fields.Name.value}</td>
+                            <td>{contact.fields.Email.value}</td>
+                            <td>{contact.fields.Title.value}</td>
+                            <td>{contact.fields.Owner.displayValue}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+            <lightning-button label="Previous" onclick={previousPage} class="slds-var-m-horizontal_small"></lightning-button>
+            <lightning-button label="Next" onclick={nextPage} class="slds-var-m-horizontal_small"></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Get PickList Values By RecordId using @wire adapter">
+        <div class="slds-var-m-around_small">
+            <lightning-combobox 
+            name="Industry" 
+            label="Industry" 
+            value={selected} 
+            placeholder="Select Industry"
+            options={options} 
+            onchange={handleChange}></lightning-combobox>
+            <p><strong>Selected Industry: </strong><i>{selected}</i></p>
+
+            <lightning-combobox 
+            name="Rating" 
+            label="Rating" 
+            value={selectedOne} 
+            placeholder="Select Rating"
+            options={optionsOne} 
+            onchange={handleChange}></lightning-combobox>
+            <p><strong>Selected Rating: </strong><i>{selectedOne}</i></p>
+        </div>
+    </lightning-card>
+</template>

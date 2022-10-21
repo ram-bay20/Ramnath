@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 3051,
+  "serverMaxRevisionCounter": 3253,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2288,26 +2288,98 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__wirePickList": {
-      "serverRevisionCounter": 3048,
-      "lastRetrievedFromServer": 3048,
+      "serverRevisionCounter": 3064,
+      "lastRetrievedFromServer": 3064,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__wirePickList/wirePickList.js": {
-      "serverRevisionCounter": 3049,
-      "lastRetrievedFromServer": 3049,
+      "serverRevisionCounter": 3065,
+      "lastRetrievedFromServer": 3065,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wirePickList/wirePickList.html": {
-      "serverRevisionCounter": 3050,
-      "lastRetrievedFromServer": 3050,
+      "serverRevisionCounter": 3066,
+      "lastRetrievedFromServer": 3066,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__wirePickList/wirePickList.js-meta.xml": {
-      "serverRevisionCounter": 3051,
-      "lastRetrievedFromServer": 3051,
+      "serverRevisionCounter": 3067,
+      "lastRetrievedFromServer": 3067,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__wireGetPicklistValuesByRecordId": {
+      "serverRevisionCounter": 3175,
+      "lastRetrievedFromServer": 3175,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetPicklistValuesByRecordId/wireGetPicklistValuesByRecordId.js-meta.xml": {
+      "serverRevisionCounter": 3176,
+      "lastRetrievedFromServer": 3176,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetPicklistValuesByRecordId/wireGetPicklistValuesByRecordId.js": {
+      "serverRevisionCounter": 3177,
+      "lastRetrievedFromServer": 3177,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetPicklistValuesByRecordId/wireGetPicklistValuesByRecordId.html": {
+      "serverRevisionCounter": 3178,
+      "lastRetrievedFromServer": 3178,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__wireGetRecord": {
+      "serverRevisionCounter": 3223,
+      "lastRetrievedFromServer": 3223,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetRecord/wireGetRecord.html": {
+      "serverRevisionCounter": 3224,
+      "lastRetrievedFromServer": 3224,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetRecord/wireGetRecord.js-meta.xml": {
+      "serverRevisionCounter": 3225,
+      "lastRetrievedFromServer": 3225,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetRecord/wireGetRecord.js": {
+      "serverRevisionCounter": 3226,
+      "lastRetrievedFromServer": 3226,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__wireGetListUi": {
+      "serverRevisionCounter": 3250,
+      "lastRetrievedFromServer": 3250,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetListUi/wireGetListUi.html": {
+      "serverRevisionCounter": 3251,
+      "lastRetrievedFromServer": 3251,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetListUi/wireGetListUi.js": {
+      "serverRevisionCounter": 3252,
+      "lastRetrievedFromServer": 3252,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__wireGetListUi/wireGetListUi.js-meta.xml": {
+      "serverRevisionCounter": 3253,
+      "lastRetrievedFromServer": 3253,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     }
