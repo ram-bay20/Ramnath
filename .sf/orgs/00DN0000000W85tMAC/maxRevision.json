@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 3602,
+  "serverMaxRevisionCounter": 3794,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2463,6 +2463,96 @@
     },
     "FlexiPage__Records": {
       "serverRevisionCounter": 3590,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__updateRecordAdapter": {
+      "serverRevisionCounter": 3730,
+      "lastRetrievedFromServer": 3730,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__updateRecordAdapter/updateRecordAdapter.html": {
+      "serverRevisionCounter": 3731,
+      "lastRetrievedFromServer": 3731,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__updateRecordAdapter/updateRecordAdapter.js-meta.xml": {
+      "serverRevisionCounter": 3732,
+      "lastRetrievedFromServer": 3732,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__updateRecordAdapter/updateRecordAdapter.js": {
+      "serverRevisionCounter": 3733,
+      "lastRetrievedFromServer": 3733,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__deleteRecordAdapter": {
+      "serverRevisionCounter": 3722,
+      "lastRetrievedFromServer": 3722,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__deleteRecordAdapter/deleteRecordAdapter.js-meta.xml": {
+      "serverRevisionCounter": 3723,
+      "lastRetrievedFromServer": 3723,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__deleteRecordAdapter/deleteRecordAdapter.js": {
+      "serverRevisionCounter": 3724,
+      "lastRetrievedFromServer": 3724,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__deleteRecordAdapter/deleteRecordAdapter.html": {
+      "serverRevisionCounter": 3725,
+      "lastRetrievedFromServer": 3725,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "ApexClass__fetchAccountData": {
+      "serverRevisionCounter": 3744,
+      "lastRetrievedFromServer": 3744,
+      "memberType": "ApexClass",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__fetchACCList": {
+      "serverRevisionCounter": 3791,
+      "lastRetrievedFromServer": 3791,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__fetchACCList/fetchACCList.html": {
+      "serverRevisionCounter": 3792,
+      "lastRetrievedFromServer": 3792,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__fetchACCList/fetchACCList.js-meta.xml": {
+      "serverRevisionCounter": 3793,
+      "lastRetrievedFromServer": 3793,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__fetchACCList/fetchACCList.js": {
+      "serverRevisionCounter": 3794,
+      "lastRetrievedFromServer": 3794,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "CustomTab__Apex_in_LWC": {
+      "serverRevisionCounter": 3764,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "FlexiPage__Apex_in_LWC": {
+      "serverRevisionCounter": 3775,
       "lastRetrievedFromServer": null,
       "memberType": "FlexiPage",
       "isNameObsolete": false

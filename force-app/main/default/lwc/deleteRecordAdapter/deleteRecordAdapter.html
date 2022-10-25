@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Delete Record Function @wire adapter">
+        <div class="slds-var-m-around_small">
+            <form>
+                <lightning-input label="Enter Record Id to be Deleted" class="clr slds-var-m-vertical_medium"
+                    onchange={keyHandler}></lightning-input>
+                <div class="slds-align_absolute-center">
+                    <lightning-button label="Delete Record" variant="destructive" onclick={deleteHandler}>
+                    </lightning-button>
+                </div>
+            </form>
+        </div>
+    </lightning-card>
+</template>
