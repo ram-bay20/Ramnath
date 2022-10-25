@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Filter Account-Type using Parametrized Apex Method">
+        <div class="slds-var-m-around_small">
+            <lightning-combobox
+            name="Type"
+            label="Select Account"
+            value={selectedType}
+            options={options}
+            onchange={changeHandler}>
+        </lightning-combobox>
+            <template if:true={filteredData.data}>
+                <template for:each={filteredData.data} for:item="filter">
+                    <div class="slds-box slds-box_x-small" key={filter.Id}>
+                        <p><strong>Account-Name:- </strong><i>{filter.Name}</i></p>
+                        <p><strong>Account-Type:- </strong><i>{filter.Type}</i></p>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

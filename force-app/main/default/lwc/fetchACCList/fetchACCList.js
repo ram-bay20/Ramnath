@@ -1,19 +1,20 @@
 import { LightningElement, wire } from 'lwc';
-import ACC_LIST from "@salesforce/apex/fetchAccountData.getAccData"
+import getAccData from "@salesforce/apex/fetchAccountData.getAccData"
 
 export default class FetchACCList extends LightningElement {
 
     accList
-    @wire(ACC_LIST)
+    @wire(getAccData)
     accounts
 
-    @wire(ACC_LIST)
-    newAccounts({data, error}){
+    @wire(getAccData)
+    newAccounts({ data, error }) {
         if (data) {
             this.accList = data.map(item => {
                 let newType = item.Type === "Customer - Channel" ? "Channel" :
-                item.Type === "Customer - Direct" ? "Direct" : "-------"
-                return {...item, newType}
+                    item.Type === "Customer - Direct" ? "Direct" : 
+                    item.Type === "" || null || undefined ? "------" : item.Type
+                return { ...item, newType }
             })
         }
         if (error) {

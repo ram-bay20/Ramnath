@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Calling Apex Imperatively">
+        <div class="slds-var-m-around_small">
+            <lightning-button variant="brand" label="Fetch Accounts" onclick={handleClick}></lightning-button>
+
+            <template if:true={fetchedAccounts}>
+                <template for:each={fetchedAccounts} for:item="account">
+                    <div class="slds-box slds-box_x-small" key={account.Id}>
+                        <p><strong>Name:- </strong><i>{account.Name}</i></p>
+                        <p><strong>Type:- </strong><i>{account.Type}</i></p>
+                        <p><strong>Industry:- </strong><i>{account.Industry}</i></p>
+                    </div>
+                </template>
+            </template> 
+        </div>
+    </lightning-card>
+</template>
