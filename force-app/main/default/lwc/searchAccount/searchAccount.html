@@ -6,9 +6,9 @@
             <template if:true={accounts}>
                 <template for:each={accounts} for:item="account">
                     <div class="slds-box slds-box_x-small" key={account.Id}>
-                        <p><strong>Name</strong><i>{account.Name}</i></p>
-                        <p><strong>Type</strong><i>{account.Type}</i></p>
-                        <p><strong>Industry</strong><i>{account.Industry}</i></p>
+                        <p><strong>Name:- </strong><i>{account.Name}</i></p>
+                        <p><strong>Type:- </strong><i>{account.Type}</i></p>
+                        <p><strong>Industry:- </strong><i>{account.Industry}</i></p>
                     </div>
                 </template>
             </template>
