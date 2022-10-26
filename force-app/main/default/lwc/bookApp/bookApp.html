@@ -1,7 +1,56 @@
 <template>
     <lightning-card>
         <div class="slds-var-m-around_small">
-            RESULT WILL APPEAR HERE!!!
+            <div class="slds-var-p-around_medium">
+                <lightning-input type="search" label="Search for Books..." value={query} onchange={fetchBookHandler}>
+                </lightning-input>
+            </div>
+            <lightning-layout multiple-rows>
+                <template if:true={books}>
+                    <template for:each={books.items} for:item="book">
+                        <lightning-layout-item size="3" padding="around-small" key={book.id}>
+                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn">
+                                <!-- For thumbnail Images -->
+                                <template if:true={book.volumeInfo.imageLinks}>
+                                    <img src={book.volumeInfo.imageLinks.smallThumbnail} />
+                                </template>
+                                <template if:false={book.volumeInfo.imageLinks}>
+                                    <img src="https://freepngimg.com/thumb/book/16-green-book-png-image-image-thumb.png"/>
+                                </template>
+                                <!-- For Title of Books -->
+                                <div class="slds-text-heading_small slds-var-p-vertical_small">
+                                    <strong>{book.volumeInfo.title}</strong>
+                                </div>
+                                <!-- For Name of Authors -->
+                                <template if:true={book.volumeInfo.authors}>
+                                    <div>
+                                        <strong>Author:- </strong><i>{book.volumeInfo.authors}</i>
+                                    </div>
+                                </template>
+                                <!-- For Published Date -->
+                                <template if:true={book.volumeInfo.publishedDate}>
+                                    <div>
+                                        <strong>Published Date:- </strong><i>{book.volumeInfo.publishedDate}</i>
+                                    </div>
+                                </template>
+                                <!-- For Page Count -->
+                                <template if:true={book.volumeInfo.pageCount}>
+                                    <div>
+                                        <strong>Total Pages:- </strong><i>{book.volumeInfo.pageCount}</i>
+                                    </div>
+                                </template>
+                                <!-- For Rating of the Books -->
+                                <template if:true={book.volumeInfo.averageRating}>
+                                    <div>
+                                        <strong>Book Rating:- </strong><i>{book.volumeInfo.averageRating}</i>
+                                    </div>
+                                </template>
+
+                            </div>
+                        </lightning-layout-item>
+                    </template>
+                </template>
+            </lightning-layout>
         </div>
     </lightning-card>
 </template>
