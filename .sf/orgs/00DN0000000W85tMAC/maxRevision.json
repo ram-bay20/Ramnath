@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 3947,
+  "serverMaxRevisionCounter": 4006,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2627,6 +2627,54 @@
       "serverRevisionCounter": 3947,
       "lastRetrievedFromServer": 3947,
       "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__bookApp": {
+      "serverRevisionCounter": 4003,
+      "lastRetrievedFromServer": 4003,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__bookApp/bookApp.js-meta.xml": {
+      "serverRevisionCounter": 4004,
+      "lastRetrievedFromServer": 4004,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__bookApp/bookApp.html": {
+      "serverRevisionCounter": 4005,
+      "lastRetrievedFromServer": 4005,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__bookApp/bookApp.js": {
+      "serverRevisionCounter": 4006,
+      "lastRetrievedFromServer": 4006,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "CustomTab__Book_List_App": {
+      "serverRevisionCounter": 3957,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "CspTrustedSite__GOOGLE_API": {
+      "serverRevisionCounter": 3969,
+      "lastRetrievedFromServer": null,
+      "memberType": "CspTrustedSite",
+      "isNameObsolete": false
+    },
+    "FlexiPage__Book_List_App": {
+      "serverRevisionCounter": 3968,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "CspTrustedSite__googleapis": {
+      "serverRevisionCounter": 3981,
+      "lastRetrievedFromServer": null,
+      "memberType": "CspTrustedSite",
       "isNameObsolete": false
     }
   }
