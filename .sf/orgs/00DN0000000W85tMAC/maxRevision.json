@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 4571,
+  "serverMaxRevisionCounter": 4575,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2678,26 +2678,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__componentConfigurationInLWC": {
-      "serverRevisionCounter": 4342,
-      "lastRetrievedFromServer": 4342,
+      "serverRevisionCounter": 4572,
+      "lastRetrievedFromServer": 4572,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__componentConfigurationInLWC/componentConfigurationInLWC.html": {
-      "serverRevisionCounter": 4343,
-      "lastRetrievedFromServer": 4343,
+      "serverRevisionCounter": 4573,
+      "lastRetrievedFromServer": 4573,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__componentConfigurationInLWC/componentConfigurationInLWC.js": {
-      "serverRevisionCounter": 4344,
-      "lastRetrievedFromServer": 4344,
+      "serverRevisionCounter": 4574,
+      "lastRetrievedFromServer": 4574,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__componentConfigurationInLWC/componentConfigurationInLWC.js-meta.xml": {
-      "serverRevisionCounter": 4345,
-      "lastRetrievedFromServer": 4345,
+      "serverRevisionCounter": 4575,
+      "lastRetrievedFromServer": 4575,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
