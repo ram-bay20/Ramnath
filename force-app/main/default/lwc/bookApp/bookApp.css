@@ -1,0 +1,8 @@
+.ccc {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ccc:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 2px 2px 2px green;
+}
