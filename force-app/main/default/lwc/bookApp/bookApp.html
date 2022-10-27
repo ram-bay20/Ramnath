@@ -9,10 +9,13 @@
                 <template if:true={books}>
                     <template for:each={books.items} for:item="book">
                         <lightning-layout-item size="3" padding="around-small" key={book.id}>
-                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn">
+                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn over">
                                 <!-- For thumbnail Images -->
                                 <template if:true={book.volumeInfo.imageLinks}>
-                                    <img src={book.volumeInfo.imageLinks.smallThumbnail} />
+                                    <img src={book.volumeInfo.imageLinks.thumbnail} />
+                                    <template if:false={book.volumeInfo.imageLinks.thumbnail}>
+                                        <img src={book.volumeInfo.imageLinks.smallThumbnail} />
+                                    </template>
                                 </template>
                                 <template if:false={book.volumeInfo.imageLinks}>
                                     <img src="https://freepngimg.com/thumb/book/16-green-book-png-image-image-thumb.png"/>
@@ -25,6 +28,12 @@
                                 <template if:true={book.volumeInfo.authors}>
                                     <div>
                                         <strong>Author:- </strong><i>{book.volumeInfo.authors}</i>
+                                    </div>
+                                </template>
+                                <!-- For Name of Category -->
+                                <template if:true={book.volumeInfo.categories}>
+                                    <div>
+                                        <strong>Categories:- </strong><i>{book.volumeInfo.categories}</i>
                                     </div>
                                 </template>
                                 <!-- For Published Date -->
