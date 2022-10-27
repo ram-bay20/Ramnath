@@ -9,7 +9,7 @@
                 <template if:true={books}>
                     <template for:each={books.items} for:item="book">
                         <lightning-layout-item size="3" padding="around-small" key={book.id}>
-                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn over">
+                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn" onmouseover={hovered}>
                                 <!-- For thumbnail Images -->
                                 <template if:true={book.volumeInfo.imageLinks}>
                                     <img src={book.volumeInfo.imageLinks.thumbnail} />
@@ -34,6 +34,12 @@
                                 <template if:true={book.volumeInfo.categories}>
                                     <div>
                                         <strong>Categories:- </strong><i>{book.volumeInfo.categories}</i>
+                                    </div>
+                                </template>
+                                <!-- For Name of Publisher -->
+                                <template if:true={book.volumeInfo.publisher}>
+                                    <div>
+                                        <strong>Publisher:- </strong><i>{book.volumeInfo.publisher}</i>
                                     </div>
                                 </template>
                                 <!-- For Published Date -->

@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 4575,
+  "serverMaxRevisionCounter": 4611,
   "sourceMembers": {
     "Profile__Read Only": {
       "serverRevisionCounter": 23,
@@ -2630,26 +2630,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__bookApp": {
-      "serverRevisionCounter": 4568,
-      "lastRetrievedFromServer": 4568,
+      "serverRevisionCounter": 4608,
+      "lastRetrievedFromServer": 4608,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__bookApp/bookApp.js-meta.xml": {
-      "serverRevisionCounter": 4569,
-      "lastRetrievedFromServer": 4569,
+      "serverRevisionCounter": 4609,
+      "lastRetrievedFromServer": 4609,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__bookApp/bookApp.html": {
-      "serverRevisionCounter": 4570,
-      "lastRetrievedFromServer": 4570,
+      "serverRevisionCounter": 4610,
+      "lastRetrievedFromServer": 4610,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__bookApp/bookApp.js": {
-      "serverRevisionCounter": 4571,
-      "lastRetrievedFromServer": 4571,
+      "serverRevisionCounter": 4611,
+      "lastRetrievedFromServer": 4611,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
@@ -2753,6 +2753,12 @@
       "serverRevisionCounter": 4527,
       "lastRetrievedFromServer": null,
       "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__bookApp/bookApp.css": {
+      "serverRevisionCounter": 4600,
+      "lastRetrievedFromServer": 4600,
+      "memberType": "LightningComponentResource",
       "isNameObsolete": false
     }
   }
