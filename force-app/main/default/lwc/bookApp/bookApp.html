@@ -9,7 +9,8 @@
                 <template if:true={books}>
                     <template for:each={books.items} for:item="book">
                         <lightning-layout-item size="3" padding="around-small" key={book.id}>
-                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn" onmouseover={hovered}>
+                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn"
+                                onmouseover={hovered}>
                                 <!-- For thumbnail Images -->
                                 <template if:true={book.volumeInfo.imageLinks}>
                                     <img src={book.volumeInfo.imageLinks.thumbnail} />
@@ -18,7 +19,8 @@
                                     </template>
                                 </template>
                                 <template if:false={book.volumeInfo.imageLinks}>
-                                    <img src="https://freepngimg.com/thumb/book/16-green-book-png-image-image-thumb.png"/>
+                                    <img
+                                        src="https://freepngimg.com/thumb/book/16-green-book-png-image-image-thumb.png" />
                                 </template>
                                 <!-- For Title of Books -->
                                 <div class="slds-text-heading_small slds-var-p-vertical_small">
