@@ -1,0 +1,40 @@
+<template>
+    <div class="container" style="background: white; padding: 10px;">
+        <div style="margin-bottom: 25px;">
+            <img src={logo} alt="The Beatles" style="width: 150px; height: 70px;">
+            <div style="float: right; text-align:right">
+                <div>Order No. : {orderInfo.orderNumber}</div>
+                <div>Order Date. : {orderInfo.orderCreated}</div>
+                <div>Order Due. : {orderInfo.orderDue}</div>
+            </div>
+        </div> 
+        <div>
+            <div style="display: inline-block;">
+                <div>{orderInfo.companyName}</div>
+                <div>{orderInfo.companyAddress1}</div>
+                <div>{orderInfo.companyAddress2}</div>
+            </div>
+            <div style="float: right; text-align:right">
+                <div>{clientInfo.client}</div>
+                <div>{clientInfo.userName}</div>
+                <div>{clientInfo.email}</div>
+            </div>
+        </div>
+        <div style="background: #ffd700; margin: 10px 0; padding: 8px;">
+            <div style="display: inline-block;"><strong>Services</strong></div>
+            <div style="float: right;"><strong>Amounts</strong></div>
+        </div>
+        <template iterator:service={services}>
+            <div key={service.value.name} style="padding: 6px;">
+                <div style="display: inline-block;">{service.value.name}</div>
+                <div style="float: right;"><span>$ </span>{service.value.amount}</div>
+            </div>
+            <div if:true={service.last} key={service.value.name} style="padding: 6px; border-top: 1px solid #ffd700;">
+                <div style="text-align: right;"><strong>Total Amount: $ {totalAmount}</strong></div>
+            </div>
+        </template>
+    </div>
+    <div style="padding:10px; background: white; border-top: 1px solid lightgrey;">
+        <lightning-button variant="brand" label="Generate PDF" onclick={publishPDF}></lightning-button>
+    </div>
+</template>

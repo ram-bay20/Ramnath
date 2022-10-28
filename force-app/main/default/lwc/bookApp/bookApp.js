@@ -3,7 +3,7 @@ import CSS from '@salesforce/resourceUrl/animate'
 import { loadStyle } from 'lightning/platformResourceLoader'
 const BOOK_LINK = 'https://www.googleapis.com/books/v1/volumes?q='
 export default class BookApp extends LightningElement {
-    query = 'Incredible Hercules'
+    query = 'Mahabharat'
     books
     timer
     isLoaded = false
