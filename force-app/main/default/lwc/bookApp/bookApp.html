@@ -9,7 +9,7 @@
                 <template if:true={books}>
                     <template for:each={books.items} for:item="book">
                         <lightning-layout-item size="3" padding="around-small" key={book.id}>
-                            <div class="slds-box slds-var-p-around_medium slds-text-align_center animate__animated animate__zoomIn ccc">
+                            <div class="slds-box slds-var-p-around_medium slds-text-align_center ccc">
                                 <!-- For thumbnail Images -->
                                 <template if:true={book.volumeInfo.imageLinks}>
                                     <img src={book.volumeInfo.imageLinks.thumbnail} />

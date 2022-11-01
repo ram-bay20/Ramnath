@@ -1,23 +1,23 @@
 import { LightningElement } from 'lwc';
-import CSS from '@salesforce/resourceUrl/animate'
-import { loadStyle } from 'lightning/platformResourceLoader'
+// import CSS from '@salesforce/resourceUrl/animate'
+// import { loadStyle } from 'lightning/platformResourceLoader'
 const BOOK_LINK = 'https://www.googleapis.com/books/v1/volumes?q='
 export default class BookApp extends LightningElement {
     query = 'Mahabharat'
     books
     timer
-    isLoaded = false
-    renderedCallback() {
-        if (this.isLoaded) {
-            return
-        } else {
-            Promise.all([loadStyle(this, CSS + '/animate/animate.min.css')])
-            .then(() => {
-                console.log("Your library is imported successfully");
-            })
-            this.isLoaded = true
-        }
-    }
+    // isLoaded = false
+    // renderedCallback() {
+    //     if (this.isLoaded) {
+    //         return
+    //     } else {
+    //         Promise.all([loadStyle(this, CSS + '/animate/animate.min.css')])
+    //         .then(() => {
+    //             console.log("Your library is imported successfully");
+    //         })
+    //         this.isLoaded = true
+    //     }
+    // }
     connectedCallback() {
         this.fetchBook()
     }
