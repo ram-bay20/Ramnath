@@ -6,7 +6,7 @@ export default class NavigateToExternalWebPage extends NavigationMixin(Lightning
           this[NavigationMixin.Navigate]({
                type: 'standard__webPage',
                attributes: {
-                    url: 'http://web.whatsapp.com'
+                    url: 'https://www.facebook.com'
                }
           })
      }

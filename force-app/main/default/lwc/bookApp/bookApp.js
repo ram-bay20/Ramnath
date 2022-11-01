@@ -1,23 +1,28 @@
 import { LightningElement } from 'lwc';
-// import CSS from '@salesforce/resourceUrl/animate'
-// import { loadStyle } from 'lightning/platformResourceLoader'
+import CSS from '@salesforce/resourceUrl/animate'
+import { loadStyle } from 'lightning/platformResourceLoader'
+import { ShowToastEvent } from "lightning/platformShowToastEvent";
 const BOOK_LINK = 'https://www.googleapis.com/books/v1/volumes?q='
 export default class BookApp extends LightningElement {
-    query = 'Mahabharat'
+    query = 'Incredible Hercules'
     books
     timer
-    // isLoaded = false
-    // renderedCallback() {
-    //     if (this.isLoaded) {
-    //         return
-    //     } else {
-    //         Promise.all([loadStyle(this, CSS + '/animate/animate.min.css')])
-    //         .then(() => {
-    //             console.log("Your library is imported successfully");
-    //         })
-    //         this.isLoaded = true
-    //     }
-    // }
+    isLoaded = false
+    renderedCallback() {
+        if (this.isLoaded) {
+            return
+        } else {
+            loadStyle(this, CSS + '/animate/animate.min.css')
+            .then(() => {
+                this.dispatchEvent(new ShowToastEvent({
+                    title: "Successfull...",
+                    message: "Animation Loaded!!!",
+                    variant: "success"
+                }))
+            })
+            this.isLoaded = true
+        }
+    }
     connectedCallback() {
         this.fetchBook()
     }
@@ -28,7 +33,13 @@ export default class BookApp extends LightningElement {
                 console.log(data);
                 this.books = data
             })
-            .catch(error => console.error(error))
+            .catch(error => {
+                this.dispatchEvent(new ShowToastEvent({
+                    title: "Something Went Wrong!!!",
+                    message: error.body.message,
+                    variant: "error"
+                }))
+            })
     }
     fetchBookHandler(event) {
         this.query = event.target.value

@@ -40,7 +40,7 @@ export default class PdfGenerator extends LightningElement {
                     variant: "success"
                 }))
                 setTimeout(() => {
-                    window.open(`https://business-momentum-8452-dev-ed.file.force.com/servlet/servlet.FileDownload?file=${result.Id}`)
+                    window.open(`https://momentum-business-6560-dev-ed.scratch.file.force.com/servlet/servlet.FileDownload?file=${result.Id}`)
                 }, 2000);
             }).catch(error => {
                 this.dispatchEvent(new ShowToastEvent({
