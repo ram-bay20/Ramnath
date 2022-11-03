@@ -1,0 +1,39 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="6" padding="around-small">
+            <lightning-card title="First Chart using ChartJS">
+                <template if:true={pieChartLables.length}>
+                    <c-chart-j-s type="doughnut" chart-heading="Opportunities"  chart-lables={pieChartLables} chart-datas={pieChartData}></c-chart-j-s>
+                </template>
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <lightning-card title="Second Chart using ChartJS 2">
+                <template if:true={pieChartLables.length}>
+                    <c-chart-j-s type="bar" chart-heading="pieChartDemo" chart-lables={pieChartLables} chart-datas={pieChartData}></c-chart-j-s>
+                </template>
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <lightning-card title="Third Chart using ChartJS 2">
+                <template if:true={pieChartLables.length}>
+                    <c-chart-j-s type="radar" chart-heading="pieChartDemo" chart-lables={pieChartLables} chart-datas={pieChartData}></c-chart-j-s>
+                </template>
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <lightning-card title="Fourth Chart using ChartJS 2">
+                <template if:true={pieChartLables.length}>
+                    <c-chart-j-s type="pie" chart-heading="pieChartDemo" chart-lables={pieChartLables} chart-datas={pieChartData}></c-chart-j-s>
+                </template>
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="6" padding="around-small">
+            <lightning-card title="Fifth Chart using ChartJS 2">
+                <template if:true={pieChartLables.length}>
+                    <c-chart-j-s type="polarArea" chart-heading="pieChartDemo" chart-lables={pieChartLables} chart-datas={pieChartData}></c-chart-j-s>
+                </template>
+            </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

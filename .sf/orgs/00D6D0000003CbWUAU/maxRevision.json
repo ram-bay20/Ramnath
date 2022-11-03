@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 1591,
+  "serverMaxRevisionCounter": 2250,
   "sourceMembers": {
     "Profile__Admin": {
       "serverRevisionCounter": 24,
@@ -2636,26 +2636,26 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__chart": {
-      "serverRevisionCounter": 1588,
-      "lastRetrievedFromServer": 1588,
+      "serverRevisionCounter": 1880,
+      "lastRetrievedFromServer": 1880,
       "memberType": "LightningComponentBundle",
-      "isNameObsolete": false
+      "isNameObsolete": true
     },
     "LightningComponentResource__chart/chart.js": {
-      "serverRevisionCounter": 1589,
-      "lastRetrievedFromServer": 1589,
+      "serverRevisionCounter": 1851,
+      "lastRetrievedFromServer": 1851,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__chart/chart.js-meta.xml": {
-      "serverRevisionCounter": 1590,
-      "lastRetrievedFromServer": 1590,
+      "serverRevisionCounter": 1852,
+      "lastRetrievedFromServer": 1852,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__chart/chart.html": {
-      "serverRevisionCounter": 1591,
-      "lastRetrievedFromServer": 1591,
+      "serverRevisionCounter": 1853,
+      "lastRetrievedFromServer": 1853,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
@@ -2678,27 +2678,129 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__chartDemo": {
-      "serverRevisionCounter": 1556,
-      "lastRetrievedFromServer": 1556,
+      "serverRevisionCounter": 1879,
+      "lastRetrievedFromServer": 1879,
       "memberType": "LightningComponentBundle",
-      "isNameObsolete": false
+      "isNameObsolete": true
     },
     "LightningComponentResource__chartDemo/chartDemo.js": {
-      "serverRevisionCounter": 1557,
-      "lastRetrievedFromServer": 1557,
+      "serverRevisionCounter": 1855,
+      "lastRetrievedFromServer": 1855,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__chartDemo/chartDemo.js-meta.xml": {
-      "serverRevisionCounter": 1558,
-      "lastRetrievedFromServer": 1558,
+      "serverRevisionCounter": 1856,
+      "lastRetrievedFromServer": 1856,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__chartDemo/chartDemo.html": {
-      "serverRevisionCounter": 1559,
-      "lastRetrievedFromServer": 1559,
+      "serverRevisionCounter": 1857,
+      "lastRetrievedFromServer": 1857,
       "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "ApexClass__OppertunityChart": {
+      "serverRevisionCounter": 1859,
+      "lastRetrievedFromServer": 1859,
+      "memberType": "ApexClass",
+      "isNameObsolete": true
+    },
+    "CustomTab__ChartJS": {
+      "serverRevisionCounter": 1866,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "FlexiPage__ChartJS": {
+      "serverRevisionCounter": 1864,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__charts": {
+      "serverRevisionCounter": 1889,
+      "lastRetrievedFromServer": 1889,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": true
+    },
+    "LightningComponentResource__charts/charts.html": {
+      "serverRevisionCounter": 1876,
+      "lastRetrievedFromServer": 1876,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__charts/charts.js": {
+      "serverRevisionCounter": 1877,
+      "lastRetrievedFromServer": 1877,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__charts/charts.js-meta.xml": {
+      "serverRevisionCounter": 1878,
+      "lastRetrievedFromServer": 1878,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__chartJS": {
+      "serverRevisionCounter": 2239,
+      "lastRetrievedFromServer": 2239,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__chartJSParent": {
+      "serverRevisionCounter": 2247,
+      "lastRetrievedFromServer": 2247,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__chartJSParent/chartJSParent.js-meta.xml": {
+      "serverRevisionCounter": 2248,
+      "lastRetrievedFromServer": 2248,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__chartJSParent/chartJSParent.js": {
+      "serverRevisionCounter": 2249,
+      "lastRetrievedFromServer": 2249,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__chartJSParent/chartJSParent.html": {
+      "serverRevisionCounter": 2250,
+      "lastRetrievedFromServer": 2250,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__chartJS/chartJS.js-meta.xml": {
+      "serverRevisionCounter": 2240,
+      "lastRetrievedFromServer": 2240,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__chartJS/chartJS.js": {
+      "serverRevisionCounter": 2241,
+      "lastRetrievedFromServer": 2241,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__chartJS/chartJS.html": {
+      "serverRevisionCounter": 2242,
+      "lastRetrievedFromServer": 2242,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "ApexClass__ChartOpportunity": {
+      "serverRevisionCounter": 2114,
+      "lastRetrievedFromServer": 2114,
+      "memberType": "ApexClass",
+      "isNameObsolete": true
+    },
+    "ApexClass__chartOppo": {
+      "serverRevisionCounter": 2109,
+      "lastRetrievedFromServer": 2109,
+      "memberType": "ApexClass",
       "isNameObsolete": false
     }
   }
