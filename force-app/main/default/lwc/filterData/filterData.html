@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="Filter Data in LWC">
+        <div class="slds-var-m-around_medium">
+            <lightning-layout>
+
+                <lightning-layout-item size="2" padding="around-small">
+                    <lightning-combobox name="filterBy" value={filterBy} label="Filter By" options={filterOption}
+                        onchange={filterByEvent}></lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="4" padding="around-small">
+                    <lightning-input type="text" label="Filter Data from the following Table" onkeyup={keyHandler}>
+                    </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="2" alignment-bump="left" padding="around-small">
+                    <lightning-combobox name="sortBy" value={sortBy} label="Sort By" options={sortOption}
+                        onchange={sortByEvent}></lightning-combobox>
+                </lightning-layout-item>
+
+            </lightning-layout>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <template for:each={tableHeadings} for:item="heading">
+                            <th key={heading}>{heading}</th>
+                        </template>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <template for:each={filteredData} for:item="item">
+                        <tr key={item.Id}>
+                            <td>{item.Id}</td>
+                            <td>{item.Name}</td>
+                            <td>{item.Title}</td>
+                            <td>{item.Email}</td>
+                        </tr>
+                    </template>
+                </tbody>
+
+            </table>
+
+        </div>
+    </lightning-card>
+</template>

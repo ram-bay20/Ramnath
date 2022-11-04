@@ -24,9 +24,9 @@ export default class MapCreator extends LightningElement {
                     Country: item.BillingCountry || '',
                     PostalCode: item.BillingPostalCode || ''
                 },
-                icon: "utility:salesforce1",
+                icon: "standard:address",
                 title: item.Name,
-                value: item.Name,
+                alue: item.Name,
                 Description: item.Description
             }
         })
