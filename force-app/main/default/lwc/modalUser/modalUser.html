@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Reusable Modal" footer="Modal End!!!">
+        <div class="slds-var-p-around_medium">
+            <lightning-button label="Show Modal" onclick={showModal}></lightning-button>
+            <template if:true={open}>
+                <c-modal onclose={closeHandler}>
+                    <h2 slot="title">Reusable Modal</h2>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad voluptas, optio consequuntur nostrum sequi itaque facere recusandae illum numquam veniam repellat placeat blanditiis aliquid vel delectus aperiam eum ex ab alias tempora expedita! Neque earum maxime eveniet velit rerum similique labore repudiandae repellendus temporibus est ducimus enim voluptatibus voluptates obcaecati officiis tempore dolorem omnis sed suscipit, ut numquam nulla!</p>
+                    </div>
+                    <div slot="footer">
+                        <button class="slds-button slds-button_neutral" onclick={closeHandler}>Cancel</button>
+                        <button class="slds-button slds-button_brand">Save</button>
+                    </div>
+                </c-modal>
+            </template>
+        </div>
+    </lightning-card>
+</template>
