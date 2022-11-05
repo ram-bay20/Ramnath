@@ -1,0 +1,15 @@
+<template>
+    <c-lightning-card>
+        <h1 slot="title">Date Validation</h1>
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="date" name="startDate" label="Start Date" onchange={dateChange}></lightning-input>
+
+            <lightning-input type="date" name="endDate" label="End Date" onchange={dateChange}></lightning-input>
+
+            <div class="slds-align_absolute-center slds-var-m-top_medium">
+                <lightning-button variant="brand" label="Validate" onclick={dateValidate}></lightning-button>
+            </div>
+
+        </div>
+    </c-lightning-card>
+</template>
