@@ -2,6 +2,13 @@
     <c-lightning-card>
         <h2 slot="title">CSV Generator</h2>
         <div class="slds-var-m-around_medium">
+            <template if:true={accountInfo}>
+                <template for:each={accountInfo} for:item="account">
+                    <div key={account.Id}>
+                        <p>{account.Name}</p>
+                    </div>
+                </template>
+            </template>
             <lightning-button label="Generate CSV" onclick={csvGenerator}></lightning-button>
         </div>
     </c-lightning-card>

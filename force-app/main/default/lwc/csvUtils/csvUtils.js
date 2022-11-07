@@ -8,28 +8,25 @@ export function exportCSV(headers, totalData, fileName) {
         return null
     }
     const blob = new Blob([result])
-    const expoetFile = fileName ? fileName + '.csv' : 'ram.csv'
+    const exportFile = fileName ? fileName + '.txt' : 'ram.csv'
     if (navigator.msSaveBlob) {
-        navigator.msSaveBlob(blob, expoetFile)
-    }
-    else if (navigator.userAgent.match(/iphone|ipad|ipod/i)) {
+        navigator.msSaveBlob(blob, exportFile)
+    } else if (navigator.userAgent.match(/iphone|ipad|ipod/i)) {
         const link = window.document.createElement('a')
-        link.href = "data:text/csv;charset=UTF-8," + encodeURI(result);
+        link.href = 'data:text/csv;charset=utf-8,' + encodeURI(result);
         link.target = "_blank"
-        link.download = expoetFile
+        link.download = exportFile
         link.click()
-    }
-    else {
+    } else {
         const link = window.document.createElement('a')
         if (link.download !== undefined) {
             const url = URL.createObjectURL(blob)
-            link.setAttribute('href', url)
-            link.setAttribute('download', expoetFile)
+            link.setAttribute("href", url)
+            link.setAttribute("download", exportFile)
             link.style.visibility = 'hidden'
             document.body.appendChild(link)
             link.click()
             document.body.removeChild(link)
-
         }
     }
 }
@@ -42,7 +39,7 @@ function convertToCSV(arrayObject, headers) {
     let str = ''
     str += showData.join(columnLimit)
     str += lineLimit
-    const data = typeof arrayObject !== "object" ? JSON.parse(arrayObject) : arrayObject
+    const data = typeof arrayObject !== 'object' ? JSON.parse(arrayObject) : arrayObject
     data.forEach(obj => {
         let line = ''
         actualData.forEach(key => {
@@ -50,9 +47,9 @@ function convertToCSV(arrayObject, headers) {
                 line += columnLimit
             }
             let item = obj[key] + ''
-            line += item ? line += item.replace(/,/g, '') : item
+            line += item ? item.replace(/,/g, '') : item
         });
-        line += item + lineLimit
+        str += line + lineLimit
     });
     return str
 }

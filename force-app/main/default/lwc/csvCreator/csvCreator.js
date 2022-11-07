@@ -23,6 +23,6 @@ export default class CsvCreator extends LightningElement {
     }
 
     csvGenerator(){
-        exportCSV(this.accountHeaders, this.accountInfo, "account_record")
+        exportCSV(this.accountHeaders, this.accountInfo, "Record")
     }
 }
