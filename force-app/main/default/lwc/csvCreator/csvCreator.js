@@ -12,6 +12,7 @@ export default class CsvCreator extends LightningElement {
         Industry: "Industry",
         Phone: "Phone"
     }
+    
     @wire(generateCSV)
     csvHandler({data,error}){
         if (data) {

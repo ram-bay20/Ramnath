@@ -2,22 +2,31 @@ export function exportCSV(headers, totalData, fileName) {
     if (!totalData || !totalData.length) {
         return null
     }
+
     const jsonObj = JSON.stringify(totalData)
     const result = convertToCSV(jsonObj, headers)
+
     if (!result) {
         return null
     }
-    const blob = new Blob([result])
-    const exportFile = fileName ? fileName + '.txt' : 'ram.csv'
+
+    const blob = new Blob([result], {type:"text/plain"})
+    const exportFile = fileName ? fileName + '.csv' : 'ram.csv'
+    console.log(blob);
+
     if (navigator.msSaveBlob) {
         navigator.msSaveBlob(blob, exportFile)
-    } else if (navigator.userAgent.match(/iphone|ipad|ipod/i)) {
+    } 
+
+    else if (navigator.userAgent.match(/iphone|ipad|ipod/i)) {
         const link = window.document.createElement('a')
         link.href = 'data:text/csv;charset=utf-8,' + encodeURI(result);
         link.target = "_blank"
         link.download = exportFile
         link.click()
-    } else {
+    } 
+
+    else {
         const link = window.document.createElement('a')
         if (link.download !== undefined) {
             const url = URL.createObjectURL(blob)
