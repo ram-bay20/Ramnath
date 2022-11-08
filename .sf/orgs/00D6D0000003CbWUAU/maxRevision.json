@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 2812,
+  "serverMaxRevisionCounter": 2822,
   "sourceMembers": {
     "Profile__Admin": {
       "serverRevisionCounter": 24,
@@ -3002,21 +3002,45 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__csvUtils": {
-      "serverRevisionCounter": 2810,
-      "lastRetrievedFromServer": 2810,
+      "serverRevisionCounter": 2820,
+      "lastRetrievedFromServer": 2820,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__csvUtils/csvUtils.js": {
-      "serverRevisionCounter": 2811,
-      "lastRetrievedFromServer": 2811,
+      "serverRevisionCounter": 2821,
+      "lastRetrievedFromServer": 2821,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__csvUtils/csvUtils.js-meta.xml": {
-      "serverRevisionCounter": 2812,
-      "lastRetrievedFromServer": 2812,
+      "serverRevisionCounter": 2822,
+      "lastRetrievedFromServer": 2822,
       "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "StaticResource__Avatar": {
+      "serverRevisionCounter": 2813,
+      "lastRetrievedFromServer": null,
+      "memberType": "StaticResource",
+      "isNameObsolete": false
+    },
+    "StaticResource__RedNaag": {
+      "serverRevisionCounter": 2814,
+      "lastRetrievedFromServer": null,
+      "memberType": "StaticResource",
+      "isNameObsolete": false
+    },
+    "StaticResource__Symbol": {
+      "serverRevisionCounter": 2815,
+      "lastRetrievedFromServer": null,
+      "memberType": "StaticResource",
+      "isNameObsolete": false
+    },
+    "StaticResource__Car": {
+      "serverRevisionCounter": 2816,
+      "lastRetrievedFromServer": null,
+      "memberType": "StaticResource",
       "isNameObsolete": false
     }
   }
