@@ -1,5 +1,5 @@
 {
-  "serverMaxRevisionCounter": 2822,
+  "serverMaxRevisionCounter": 3490,
   "sourceMembers": {
     "Profile__Admin": {
       "serverRevisionCounter": 24,
@@ -3002,20 +3002,20 @@
       "isNameObsolete": false
     },
     "LightningComponentBundle__csvUtils": {
-      "serverRevisionCounter": 2820,
-      "lastRetrievedFromServer": 2820,
+      "serverRevisionCounter": 2831,
+      "lastRetrievedFromServer": 2831,
       "memberType": "LightningComponentBundle",
       "isNameObsolete": false
     },
     "LightningComponentResource__csvUtils/csvUtils.js": {
-      "serverRevisionCounter": 2821,
-      "lastRetrievedFromServer": 2821,
+      "serverRevisionCounter": 2832,
+      "lastRetrievedFromServer": 2832,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
     "LightningComponentResource__csvUtils/csvUtils.js-meta.xml": {
-      "serverRevisionCounter": 2822,
-      "lastRetrievedFromServer": 2822,
+      "serverRevisionCounter": 2833,
+      "lastRetrievedFromServer": 2833,
       "memberType": "LightningComponentResource",
       "isNameObsolete": false
     },
@@ -3039,6 +3039,84 @@
     },
     "StaticResource__Car": {
       "serverRevisionCounter": 2816,
+      "lastRetrievedFromServer": null,
+      "memberType": "StaticResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__carousel": {
+      "serverRevisionCounter": 3486,
+      "lastRetrievedFromServer": 3486,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentBundle__carouselParent": {
+      "serverRevisionCounter": 3241,
+      "lastRetrievedFromServer": 3241,
+      "memberType": "LightningComponentBundle",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carousel/carousel.js-meta.xml": {
+      "serverRevisionCounter": 3488,
+      "lastRetrievedFromServer": 3488,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carousel/carousel.html": {
+      "serverRevisionCounter": 3489,
+      "lastRetrievedFromServer": 3489,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carousel/carousel.js": {
+      "serverRevisionCounter": 3490,
+      "lastRetrievedFromServer": 3490,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carouselParent/carouselParent.html": {
+      "serverRevisionCounter": 3242,
+      "lastRetrievedFromServer": 3242,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carouselParent/carouselParent.js-meta.xml": {
+      "serverRevisionCounter": 3243,
+      "lastRetrievedFromServer": 3243,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carouselParent/carouselParent.js": {
+      "serverRevisionCounter": 3244,
+      "lastRetrievedFromServer": 3244,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "CustomTab__Custom_Carousel": {
+      "serverRevisionCounter": 2839,
+      "lastRetrievedFromServer": null,
+      "memberType": "CustomTab",
+      "isNameObsolete": false
+    },
+    "FlexiPage__Custom_Carousel": {
+      "serverRevisionCounter": 2848,
+      "lastRetrievedFromServer": null,
+      "memberType": "FlexiPage",
+      "isNameObsolete": false
+    },
+    "LightningComponentResource__carousel/carousel.css": {
+      "serverRevisionCounter": 3487,
+      "lastRetrievedFromServer": 3487,
+      "memberType": "LightningComponentResource",
+      "isNameObsolete": false
+    },
+    "StaticResource__Sunset": {
+      "serverRevisionCounter": 2935,
+      "lastRetrievedFromServer": null,
+      "memberType": "StaticResource",
+      "isNameObsolete": false
+    },
+    "StaticResource__Computer": {
+      "serverRevisionCounter": 3015,
       "lastRetrievedFromServer": null,
       "memberType": "StaticResource",
       "isNameObsolete": false

@@ -1,0 +1,30 @@
+<template>
+    <div class="slds-is-relative container" style={sizeHandler}>
+        <template if:true={toggler}>
+            <div class="toggled">
+                <label>Auto scroll</label>
+                <lightning-input type="toggle" onchange={changeHandler}></lightning-input>
+            </div>
+        </template>
+        <template for:each={slideData} for:item="slide">
+            <div class={slide.cardClass} key={slide.slideIndex}>
+                <div class="slideNumber">{slide.slideIndex}/{slideData.length}</div>
+                <img src={slide.image} alt={slide.heading} />
+                <div class="text-section slds-var-p-horizontal_small">
+                    <div class="slds-text-heading_large">{slide.heading}</div>
+                    <div class="slds-text-heading_small">{slide.description}</div>
+                </div>
+            </div>
+        </template>
+        <a class="prev" onclick={goBack}>&#10094;</a>
+        <a class="next" onclick={goFront}>&#10095;</a>
+    </div>
+    <div class="slds-text-align_center slds-var-p-around_medium">
+        <a onclick={goBack} class="ppp">&#8249;</a>
+        <template for:each={slideData} for:item="slide">
+            <span class={slide.dotclass} data-id={slide.slideIndex} key={slide.slideIndex}
+                onclick={currentHandler}></span>
+        </template>
+        <a onclick={goFront} class="ppp">&#8250;</a>
+    </div>
+</template>
