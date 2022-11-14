@@ -1,7 +1,7 @@
 import { api, LightningElement } from 'lwc';
 
-const SHOW_IMAGE_CLASS = 'slds-show';
-const HIDE_IMAGE_CLASS = 'slds-hide';
+const SHOW_IMAGE_CLASS = 'slds-show ani';
+const HIDE_IMAGE_CLASS = 'slds-hide ani';
 const ACTIVE_DOT_CLASS = 'dot active';
 const DOT_CLASS = 'dot';
 const DEFAULT_TIMER = 3000

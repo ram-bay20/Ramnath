@@ -96,3 +96,11 @@ img {
 .ppp:hover {
     color: orangered;
 }
+
+.ani{
+    animation: fade 1.5s ease-in-out ;
+}
+
+@keyframes fade {
+    
+}
